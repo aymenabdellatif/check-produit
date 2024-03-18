@@ -1,0 +1,50 @@
+algorithme checkpoint
+variable n1, n2,i1,i2 
+tab t1[],t2[]
+début
+    ecrire("donnre la taille du premier tableau")
+    lire n1
+    ecrire("donnre la taille du deuxieme tableau")
+    lire n2
+    pour i de 1 à n1+n2 faire
+        si T1[i1]≤T2[i2] alors 
+        T[i] = T1[i1]; 
+        i1 = i1+1; 
+      sinon 
+        T[i] = T2[I2]; 
+        i2 = i2+1;
+        fin_si 
+    fin_pour 
+
+fin
+
+
+
+ 
+ALGORITHM produit scalaire
+VAR
+    ps,i,j :entier;
+    v1,v2 : tab[];
+debut
+    ecrire('ecrire un nombre')
+    read(n)
+ 
+    pour i de 1 a  n  DO
+        ecrire('saisir x de v1');
+        lire(v1[0]);
+        ecrire('saisir y de v1');
+        lire(v1[1]);
+ 
+        ecrire('saisir x de v2');
+        lire(v2[0]);
+        ecrire('saisir y de v2');
+        lire(v2[1]);
+
+    fin_pour
+    ps := (v1[0]*v2[0]) + (v1[1]*v2[1])
+    si (ps == 0) 
+        ecrire('les deux paires sont orthogoneaux');
+    sinon
+        ecrire('les deux paires ne sont pas orthogoneaux')
+    fin_si
+fin 
